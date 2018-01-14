@@ -22,7 +22,7 @@ function calculatesFarePrice(start, destination) {
       return dist * .02;
     case dist > 2000:
       return 25;
-    case dist > 2500:
+    case dist >= 2500:
       return 'cannot travel that far'
   }
 }
