@@ -11,3 +11,10 @@ function distanceTravelledInFeet(start, end) {
   const dist = Math.abs(start-end)
   return dist * 264
 }
+
+function calculatesFarePrice(start, destination) {
+  switch (distanceTravelledInFeet(start, destination)) {
+    case < 400:
+      return "It's free"
+  }
+}
