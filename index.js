@@ -15,7 +15,7 @@ function distanceTravelledInFeet(start, end) {
 function calculatesFarePrice(start, destination) {
   const dist = distanceTravelledInFeet(start, destination)
   switch (dist) {
-    case < 400:
+    case dist < 400:
       return "It's free";
   }
 }
