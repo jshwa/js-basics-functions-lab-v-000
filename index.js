@@ -5,6 +5,7 @@ function distanceFromHqInBlocks(location) {
       return location - 45;
       break;
     case location < 45:
-      return
+      return 45 - location;
+      break;
   }
 }
