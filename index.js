@@ -19,7 +19,7 @@ function calculatesFarePrice(start, destination) {
     case dist < 400:
       return 0;
       break;
-    case dist > 400:
+    case dist > 400 && dist < 2000:
       return dist * .02;
       break;
     case dist > 2000 :
