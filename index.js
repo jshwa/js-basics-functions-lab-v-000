@@ -1,12 +1,13 @@
 // Code your solution in this file!
 function distanceFromHqInBlocks(location) {
-  if (location > 42)
-    return location - 42;
-  else if (location < 42)
-    return 42 - location;
+  return Math.abs(location - 42)
 }
 
 function distanceFromHqInFeet(location) {
   return distanceFromHqInBlocks(location)*264
 }
 
+function distanceTravelledInFeet(start, end) {
+  const dist = Math.abs(start-end)
+  dist * 264
+}
